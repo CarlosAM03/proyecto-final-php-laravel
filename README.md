@@ -83,3 +83,18 @@ Este proyecto permitió reforzar conocimientos sobre:
 
 **Carlos Benjamín Armenta Márquez**  
 Proyecto académico – Curso de PHP con Laravel
+
+---
+
+## Capturas de pantalla
+<img width="1150" height="760" alt="image" src="https://github.com/user-attachments/assets/d6b64f00-1620-400b-afd2-06f5072b78da" />
+<img width="1150" height="760" alt="image" src="https://github.com/user-attachments/assets/e7372eaf-a285-470d-88cd-4d3001bd5d9b" />
+<img width="1150" height="760" alt="image" src="https://github.com/user-attachments/assets/4f1a837c-ffa8-4fb2-bf6b-64ce6a54ef04" />
+<img width="1150" height="760" alt="image" src="https://github.com/user-attachments/assets/a6fd7473-88f4-4736-ac23-0b531bc68ae5" />
+<img width="1150" height="760" alt="image" src="https://github.com/user-attachments/assets/517665d7-9d87-420d-8809-30d77e434ceb" />
+<img width="1150" height="760" alt="image" src="https://github.com/user-attachments/assets/9d2ef712-df92-4e01-a235-7eab92528888" />
+<img width="1150" height="760" alt="image" src="https://github.com/user-attachments/assets/f7ccfa2a-d600-445f-8805-173dd4ac5888" />
+
+---
+
+
