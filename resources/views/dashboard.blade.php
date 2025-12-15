@@ -1,29 +1,72 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="fw-bold text-xl text-gray-800 leading-tight">
             Dashboard
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
+    {{-- Bootstrap CDN --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                <h3 class="text-xl font-bold mb-4">
-                    Bienvenido, {{ Auth::user()->name }}
-                </h3>
+    <div class="container py-5">
 
-                <p class="text-gray-600 mb-4">
-                    Has iniciado sesión correctamente.
-                </p>
-
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Autenticación con usuario y contraseña</li>
-                    <li>Inicio de sesión con Google (OAuth)</li>
-                    <li>Dashboard protegido por middleware</li>
-                </ul>
-
+        <!-- BIENVENIDA -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="alert alert-primary shadow-sm">
+                    <h4 class="alert-heading mb-1">
+                        Bienvenido, {{ Auth::user()->name }}
+                    </h4>
+                    <p class="mb-0">
+                        Has iniciado sesión correctamente en el sistema.
+                    </p>
+                </div>
             </div>
         </div>
+
+        <!-- TARJETAS -->
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Autenticación</h5>
+                        <p class="card-text text-muted">
+                            El sistema permite el inicio de sesión mediante
+                            correo electrónico y contraseña.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Google OAuth</h5>
+                        <p class="card-text text-muted">
+                            Se integró el acceso mediante Google utilizando
+                            OAuth 2.0 y Laravel Socialite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Seguridad</h5>
+                        <p class="card-text text-muted">
+                            El dashboard está protegido por middleware,
+                            permitiendo acceso solo a usuarios autenticados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
+    {{-- Bootstrap JS --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </x-app-layout>
